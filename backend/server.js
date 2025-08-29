@@ -8,7 +8,7 @@ app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/home.html'));
 });
 
-app.listen(3000, '0.0.0.0', () => {
+app.listen(3000, () => {
     console.log('Server started on port 3000');
     console.log(__dirname)
 });
