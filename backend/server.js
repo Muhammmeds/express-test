@@ -4,8 +4,8 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-app.get('/', (req, res) => {
-    res.json('Hello');
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname , '../frontend/home.html'))
 });
 
 app.listen(3000, () => {
